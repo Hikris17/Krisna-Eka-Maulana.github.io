@@ -1,135 +1,116 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Krisna Eka Maulana | Data Analyst</title>
-
-<link rel="stylesheet" href="style.css">
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Krisna Eka Maulana - Data Analyst</title>
+    <link rel="stylesheet" href="style.css">
+    <script defer src="script.js"></script>
 </head>
-
 <body>
+    <!-- Header / Hero -->
+    <header id="hero">
+        <div class="hero-content">
+            <h1>Krisna Eka Maulana</h1>
+            <p>Turning data into actionable insights that drive business decisions</p>
+            <div class="buttons">
+                <a href="#projects" class="btn">View Projects</a>
+                <a href="#contact" class="btn btn-secondary">Contact Me</a>
+            </div>
+        </div>
+    </header>
 
-<!-- NAVBAR -->
-<nav class="navbar">
-<div class="logo">Krisna</div>
-<ul>
-<li><a href="#about">About</a></li>
-<li><a href="#projects">Projects</a></li>
-<li><a href="#skills">Skills</a></li>
-<li><a href="#contact">Contact</a></li>
-</ul>
-</nav>
+    <!-- About Me -->
+    <section id="about">
+        <div class="container about-container">
+            <img src="profile.jpg" alt="Krisna Eka Maulana" class="profile-img">
+            <div class="about-text">
+                <h2>About Me</h2>
+                <p>Hello! I'm <strong>Krisna Eka Maulana</strong>, a passionate Data Analyst who loves turning raw data into actionable insights. From cleaning messy datasets to building predictive models, I enjoy every step of the data journey. I thrive on solving business challenges through data-driven solutions and making complex information easy to understand with intuitive visualizations.</p>
+                <p>When I'm not analyzing data, you can find me exploring new tech trends, learning advanced machine learning techniques, or improving dashboards to make them both functional and beautiful.</p>
 
-<!-- HERO -->
-<section class="hero">
-<div class="hero-content">
-<img src="Foto.jpg" class="profile">
+                <div class="skills">
+                    <h3>Skills & Tools</h3>
+                    <div class="skill">
+                        <span>Python</span>
+                        <div class="skill-bar"><div class="skill-progress" style="width:95%"></div></div>
+                    </div>
+                    <div class="skill">
+                        <span>SQL</span>
+                        <div class="skill-bar"><div class="skill-progress" style="width:85%"></div></div>
+                    </div>
+                    <div class="skill">
+                        <span>Power BI / Tableau</span>
+                        <div class="skill-bar"><div class="skill-progress" style="width:90%"></div></div>
+                    </div>
+                    <div class="skill">
+                        <span>Machine Learning</span>
+                        <div class="skill-bar"><div class="skill-progress" style="width:80%"></div></div>
+                    </div>
+                    <div class="skill">
+                        <span>Data Visualization</span>
+                        <div class="skill-bar"><div class="skill-progress" style="width:95%"></div></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
-<h1>Krisna Eka Maulana</h1>
-<h2 class="typing"></h2>
+    <!-- Projects -->
+    <section id="projects">
+        <div class="container">
+            <h2>Featured Projects</h2>
+            <div class="projects-grid">
+                <div class="project-card">
+                    <h3>Supermarket Dashboard</h3>
+                    <p><strong>Goal:</strong> Monitor sales & stock</p>
+                    <p><strong>Impact:</strong> Reduced out-of-stock by 15%</p>
+                    <p><strong>Tools:</strong> Power BI, Python</p>
+                </div>
+                <div class="project-card">
+                    <h3>Telecom Analytics</h3>
+                    <p><strong>Goal:</strong> Customer churn analysis</p>
+                    <p><strong>Impact:</strong> Identified high-risk segments for retention</p>
+                    <p><strong>Tools:</strong> SQL, Tableau</p>
+                </div>
+                <div class="project-card">
+                    <h3>Sentiment Analysis Riliv</h3>
+                    <p><strong>Goal:</strong> Classify user review sentiment</p>
+                    <p><strong>Impact:</strong> 80% accuracy, weekly trend visualization</p>
+                    <p><strong>Tools:</strong> Python (scikit-learn, matplotlib)</p>
+                </div>
+                <div class="project-card">
+                    <h3>Healthplus Capstone</h3>
+                    <p><strong>Goal:</strong> Patient & service data analysis</p>
+                    <p><strong>Impact:</strong> Strategic recommendations for patient satisfaction</p>
+                    <p><strong>Tools:</strong> Python, Tableau</p>
+                </div>
+                <div class="project-card">
+                    <h3>Object Detection</h3>
+                    <p><strong>Goal:</strong> Detect objects using ML</p>
+                    <p><strong>Impact:</strong> 92% precision</p>
+                    <p><strong>Tools:</strong> TensorFlow, OpenCV</p>
+                </div>
+            </div>
+        </div>
+    </section>
 
-<p>Data Analyst focusing on data quality, visualization, and business insights.</p>
+    <!-- Contact -->
+    <section id="contact">
+        <div class="container">
+            <h2>Contact Me</h2>
+            <p>Let's collaborate! Reach out for projects, freelancing, or job opportunities:</p>
+            <ul class="contact-list">
+                <li>Email: <a href="mailto:krisnaekamaulana13@gmail.com">krisnaekamaulana13@gmail.com</a></li>
+                <li>GitHub: <a href="https://github.com/Hikris17" target="_blank">github.com/Hikris17</a></li>
+                <li>LinkedIn: <a href="https://www.linkedin.com/in/krisna-eka-maulana" target="_blank">krisna-eka-maulana</a></li>
+            </ul>
+        </div>
+    </section>
 
-<a href="#projects" class="btn">View My Work</a>
-</div>
-</section>
-
-<!-- ABOUT -->
-<section id="about" class="section">
-<h2>About Me</h2>
-<p>
-Lulusan Informatika Universitas AMIKOM Yogyakarta dengan minat pada data analytics,
-machine learning, dan data science. Berpengalaman dalam data cleaning,
-exploratory analysis, dan pembuatan dashboard.
-</p>
-</section>
-
-<!-- PROJECTS -->
-<section id="projects" class="section dark">
-<h2>Projects</h2>
-
-<div class="grid">
-
-<div class="card">
-<h3>Supermarket Analysis Dashboard</h3>
-<p>EDA dan visualisasi data penjualan supermarket untuk insight bisnis.</p>
-<a href="https://github.com/Hikris17/Supermarket-Analisis-Dashboard" target="_blank">View Project</a>
-</div>
-
-<div class="card">
-<h3>Sentiment Analysis Riliv</h3>
-<p>Pipeline analisis sentimen dan dashboard visualisasi tren.</p>
-<a href="https://github.com/Hikris17/Sentiment-Analysis-aplikasi-Riliv" target="_blank">View Project</a>
-</div>
-
-<div class="card">
-<h3>Telecom Customer Analytics</h3>
-<p>Analisis churn dan KPI customer telecom.</p>
-<a href="https://github.com/Hikris17/Telecom-customer-analytics-dashboard" target="_blank">View Project</a>
-</div>
-
-<div class="card">
-<h3>Healthplus Capstone</h3>
-<p>Capstone project pengembangan aplikasi.</p>
-<a href="https://github.com/Hikris17/Healthplus-capstone" target="_blank">View Project</a>
-</div>
-
-<div class="card">
-<h3>Streamlit Project</h3>
-<p>Aplikasi dashboard menggunakan Streamlit.</p>
-<a href="https://github.com/Hikris17/streamlit-project" target="_blank">View Project</a>
-</div>
-
-<div class="card">
-<h3>Object Detection</h3>
-<p>Build model Object detection with Tensorflow.</p>
-<a href="https://github.com/Hikris17/Object-Detection---Tensorflow" target="_blank">View Project</a>
-</div>
-
-</div>
-</section>
-
-<!-- SKILLS -->
-<section id="skills" class="section">
-<h2>Skills</h2>
-
-<div class="skills">
-<div class="skill"><span>Python</span><div class="bar"><div style="width:90%"></div></div></div>
-<div class="skill"><span>SQL</span><div class="bar"><div style="width:80%"></div></div></div>
-<div class="skill"><span>Power BI</span><div class="bar"><div style="width:85%"></div></div></div>
-<div class="skill"><span>Data Analysis</span><div class="bar"><div style="width:95%"></div></div></div>
-</div>
-</section>
-
-<!-- CONTACT -->
-<section id="contact" class="section dark">
-<h2>Contact</h2>
-
-<p>
-📧 Email:
-<a href="mailto:krisnaekamaulana13@gmail.com">
-krisnaekamaulana13@gmail.com
-</a>
-</p>
-
-<p>
-💼 LinkedIn:
-<a href="https://www.linkedin.com/in/krisna-eka-maulana-786939309/" target="_blank">
-linkedin.com/in/krisna-eka-maulana
-</a>
-</p>
-
-<p>
-💻 GitHub:
-<a href="https://github.com/Hikris17" target="_blank">
-github.com/Hikris17
-</a>
-</p>
-
-</section>
-
-<script src="script.js"></script>
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2026 Krisna Eka Maulana. All rights reserved.</p>
+    </footer>
 </body>
 </html>
