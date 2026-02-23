@@ -1,94 +1,149 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-<title>Krisna Eka Maulana | Data Analyst</title>
-<meta name="viewport" content="width=device-width, initial-scale=1">
-
-<style>
-body{
-font-family: Arial, sans-serif;
-margin:0;
-background:#0f172a;
-color:white;
-}
-
-.container{
-width:90%;
-max-width:900px;
-margin:auto;
-padding:60px 0;
-}
-
-.hero{
-text-align:center;
-}
-
-.card{
-background:#1e293b;
-padding:25px;
-margin:20px 0;
-border-radius:12px;
-}
-
-h1{color:#38bdf8;}
-h2{color:#94a3b8;}
-
-a{color:#38bdf8;}
-</style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Krisna Eka Maulana | Portfolio</title>
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
 
-<div class="container hero">
-<h1>Krisna Eka Maulana</h1>
-<h2>Data Analyst | Data Science | Machine Learning</h2>
-<p>Transforming raw data into actionable insights through data analysis and visualization.</p>
-</div>
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top">
+    <div class="container">
+      <a class="navbar-brand" href="#">Krisna Eka Maulana</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="#hero">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
+          <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
 
-<div class="container">
+  <!-- Hero Section -->
+  <section id="hero" class="vh-100 d-flex flex-column justify-content-center align-items-center text-center bg-primary text-white">
+    <h1>Krisna Eka Maulana</h1>
+    <p>Data Analyst | Turning data into actionable insights</p>
+    <a href="#about" class="btn btn-light mt-3">About Me</a>
+  </section>
 
-<div class="card">
-<h2>About Me</h2>
-<p>
-Data Analyst dengan minat pada data science dan machine learning. Fokus pada kualitas data, analisis sistematis, dan penyajian insight bisnis.
-Lulusan Informatika Universitas AMIKOM Yogyakarta dengan pengalaman dalam data cleaning, exploratory data analysis, dan dashboard reporting.
-</p>
-</div>
+  <!-- About Section -->
+  <section id="about" class="py-5 bg-light">
+    <div class="container">
+      <h2 class="text-center mb-4">About Me</h2>
+      <div class="row align-items-center">
+        <div class="col-md-4 text-center mb-3">
+          <img src="profile.jpg" class="rounded-circle img-fluid" alt="Krisna Eka Maulana">
+        </div>
+        <div class="col-md-8">
+          <p>Hello! I'm <strong>Krisna Eka Maulana</strong>, a passionate Data Analyst who loves turning raw data into actionable insights. I specialize in creating dashboards and analytical solutions that make data easy to understand and act upon.</p>
+          <p>Always exploring new tech trends, machine learning methods, and ways to make data visualization more intuitive and beautiful.</p>
+        </div>
+      </div>
+    </div>
+  </section>
 
-<div class="card">
-<h2>Skills</h2>
-<ul>
-<li>Exploratory Data Analysis (EDA)</li>
-<li>Data Cleaning & Preprocessing</li>
-<li>Business Insight Analysis</li>
-<li>Dashboard Development</li>
-<li>Python (Pandas)</li>
-<li>SQL</li>
-<li>Power BI / Tableau</li>
-</ul>
-</div>
+  <!-- Skills Section -->
+  <section id="skills" class="py-5">
+    <div class="container">
+      <h2 class="text-center mb-4">Skills & Tools</h2>
+      <div class="row g-3">
+        <div class="col-md-3">
+          <h5>Python</h5>
+          <div class="progress">
+            <div class="progress-bar bg-primary" style="width:95%">95%</div>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <h5>SQL</h5>
+          <div class="progress">
+            <div class="progress-bar bg-primary" style="width:85%">85%</div>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <h5>Power BI / Tableau</h5>
+          <div class="progress">
+            <div class="progress-bar bg-primary" style="width:90%">90%</div>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <h5>Machine Learning</h5>
+          <div class="progress">
+            <div class="progress-bar bg-primary" style="width:80%">80%</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
 
-<div class="card">
-<h2>Projects</h2>
+  <!-- Projects Section -->
+  <section id="projects" class="py-5 bg-light">
+    <div class="container">
+      <h2 class="text-center mb-4">Projects</h2>
+      <div class="row g-4">
+        <div class="col-md-4">
+          <div class="card h-100">
+            <div class="card-body">
+              <h5 class="card-title">Supermarket Dashboard</h5>
+              <p class="card-text">Dashboard untuk monitoring penjualan & stock.</p>
+              <p class="card-text"><strong>Tools:</strong> Power BI, Python</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card h-100">
+            <div class="card-body">
+              <h5 class="card-title">Telecom Analytics</h5>
+              <p class="card-text">Analisis churn pelanggan & KPI.</p>
+              <p class="card-text"><strong>Tools:</strong> SQL, Tableau</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card h-100">
+            <div class="card-body">
+              <h5 class="card-title">Sentiment Analysis</h5>
+              <p class="card-text">Analisis sentimen ulasan pengguna.</p>
+              <p class="card-text"><strong>Tools:</strong> Python, Scikit-learn</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
 
-<h3>Supermarket Analysis Dashboard</h3>
-<p>Analisis data penjualan supermarket untuk melihat tren penjualan dan perilaku pelanggan.</p>
+  <!-- Contact Section -->
+  <section id="contact" class="py-5">
+    <div class="container text-center">
+      <h2 class="mb-4">Contact Me</h2>
+      <p>Let's connect! Click below to reach me directly.</p>
+      <div class="d-flex justify-content-center gap-3 mt-3 flex-wrap">
+        <a href="mailto:krisnaekamaulana13@gmail.com" class="btn btn-primary">Email</a>
+        <a href="https://github.com/Hikris17" target="_blank" class="btn btn-dark">GitHub</a>
+        <a href="https://www.linkedin.com/in/krisna-eka-maulana" target="_blank" class="btn btn-info text-white">LinkedIn</a>
+        <a href="https://wa.me/6281234567890" target="_blank" class="btn btn-success">WhatsApp</a>
+      </div>
+    </div>
+  </section>
 
-<h3>Telecom Customer Analytics Dashboard</h3>
-<p>Analisis data pelanggan untuk memetakan KPI dan pola churn.</p>
+  <!-- Footer -->
+  <footer class="text-center py-3 bg-primary text-white">
+    &copy; 2026 Krisna Eka Maulana. All rights reserved.
+  </footer>
 
-<h3>Sentiment Analysis – Aplikasi Riliv</h3>
-<p>Pipeline analisis sentimen dari data teks dan visualisasi tren sentimen.</p>
-
-</div>
-
-<div class="card">
-<h2>Contact</h2>
-<p>Email: krisnaekamaulana13@gmail.com</p>
-<p>GitHub: github.com/Hikris17</p>
-</div>
-
-</div>
-
+  <!-- Bootstrap JS Bundle -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <!-- Smooth Scroll -->
+  <script src="script.js"></script>
 </body>
 </html>
