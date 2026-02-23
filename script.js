@@ -1,23 +1,28 @@
-const text = ["Data Analyst", "Machine Learning Enthusiast", "Data Science Enthusiast"];
-let count = 0;
-let index = 0;
-let currentText = "";
-let letter = "";
+// Smooth scroll for anchor links
+document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+    anchor.addEventListener('click', function(e) {
+        e.preventDefault();
+        const target = document.querySelector(this.getAttribute('href'));
+        if (target) {
+            target.scrollIntoView({
+                behavior: 'smooth'
+            });
+        }
+    });
+});
 
-function type(){
-if(count === text.length) count = 0;
+// Optional: Highlight active section in URL on scroll
+window.addEventListener('scroll', () => {
+    const sections = document.querySelectorAll('section');
+    const scrollPos = window.scrollY || window.pageYOffset;
 
-currentText = text[count];
-letter = currentText.slice(0, ++index);
+    sections.forEach(section => {
+        const top = section.offsetTop - 100;
+        const bottom = top + section.offsetHeight;
+        const id = section.getAttribute('id');
 
-document.querySelector(".typing").textContent = letter;
-
-if(letter.length === currentText.length){
-count++;
-index = 0;
-}
-
-setTimeout(type,120);
-}
-
-type();
+        if (scrollPos >= top && scrollPos < bottom) {
+            history.replaceState(null, '', `#${id}`);
+        }
+    });
+});
