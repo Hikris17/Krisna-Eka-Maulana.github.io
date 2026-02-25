@@ -12,7 +12,10 @@
 <!-- NAVBAR -->
 <nav class="navbar">
   <div class="logo">Krisna</div>
-  <ul>
+  <div class="hamburger" id="hamburger">
+    <span></span><span></span><span></span>
+  </div>
+  <ul id="nav-links">
     <li><a href="#about">About</a></li>
     <li><a href="#projects">Projects</a></li>
     <li><a href="#skills">Skills</a></li>
@@ -48,35 +51,36 @@
 <section id="projects" class="section dark">
   <h2>Projects</h2>
   <div class="grid">
-    <div class="card">
+    <!-- Project Cards -->
+    <div class="card" data-project="1">
       <h3>Supermarket Analysis Dashboard</h3>
       <p>EDA dan visualisasi data penjualan supermarket untuk insight bisnis.</p>
-      <a href="https://github.com/Hikris17/Supermarket-Analisis-Dashboard" target="_blank">View Project</a>
+      <button class="btn view-project">View Project</button>
     </div>
-    <div class="card">
+    <div class="card" data-project="2">
       <h3>Sentiment Analysis Riliv</h3>
       <p>Pipeline analisis sentimen dan dashboard visualisasi tren.</p>
-      <a href="https://github.com/Hikris17/Sentiment-Analysis-aplikasi-Riliv" target="_blank">View Project</a>
+      <button class="btn view-project">View Project</button>
     </div>
-    <div class="card">
+    <div class="card" data-project="3">
       <h3>Telecom Customer Analytics</h3>
       <p>Analysis of churn rates and telecommunications customer KPIs.</p>
-      <a href="https://github.com/Hikris17/Telecom-customer-analytics-dashboard" target="_blank">View Project</a>
+      <button class="btn view-project">View Project</button>
     </div>
-    <div class="card">
+    <div class="card" data-project="4">
       <h3>Healthplus Capstone</h3>
       <p>Health application creation and development.</p>
-      <a href="https://github.com/Hikris17/Healthplus-capstone" target="_blank">View Project</a>
+      <button class="btn view-project">View Project</button>
     </div>
-    <div class="card">
+    <div class="card" data-project="5">
       <h3>Streamlit Project</h3>
       <p>Dashboard application using Streamlit.</p>
-      <a href="https://github.com/Hikris17/streamlit-project" target="_blank">View Project</a>
+      <button class="btn view-project">View Project</button>
     </div>
-    <div class="card">
+    <div class="card" data-project="6">
       <h3>Object Detection</h3>
       <p>Membuat object detection menggunakan Tensorflow.</p>
-      <a href="https://github.com/Hikris17/Object-Detection-Tensorflow" target="_blank">View Project</a>
+      <button class="btn view-project">View Project</button>
     </div>
   </div>
 </section>
@@ -101,7 +105,14 @@
   <p>📱 WhatsApp: <a href="https://wa.me/6282225543953" target="_blank">Chat Now</a></p>
 </section>
 
+<!-- PROJECT MODAL -->
+<div id="project-modal" class="modal">
+  <div class="modal-content">
+    <span class="close">&times;</span>
+    <div id="modal-body"></div>
+  </div>
+</div>
+
 <script src="script.js"></script>
 </body>
 </html>
-
